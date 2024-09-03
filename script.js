@@ -15,7 +15,14 @@ class Rectangle {
 	}
 }
 
-class Square extends Animal {}
+class Square extends Rectangle {
+	constructor(side){
+		this.side=side;
+	}
+	getPerimeter:()=>{
+		return 4*this.side;
+	}
+}
 
 // Do not change the code below this line
 window.Rectangle = Rectangle;
